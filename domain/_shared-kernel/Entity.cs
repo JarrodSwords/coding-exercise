@@ -1,4 +1,5 @@
 ﻿using System;
+using Domain.Staff;
 
 namespace Domain
 {
@@ -18,5 +19,11 @@ namespace Domain
         public Guid Id { get; set; }
 
         #endregion
+    }
+
+    public interface IUnitOfWork
+    {
+        IEmployeeRepository Employees { get; }
+        void Commit();
     }
 }

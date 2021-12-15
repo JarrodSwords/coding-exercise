@@ -1,5 +1,6 @@
 ﻿using System;
 using Domain;
+using Domain.Staff;
 using FluentAssertions;
 using Xunit;
 
